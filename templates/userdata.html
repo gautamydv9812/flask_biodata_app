@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Bio Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Submit Your Bio Data</h2>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="number" name="age" placeholder="Your Age" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="bio" placeholder="Short Bio" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

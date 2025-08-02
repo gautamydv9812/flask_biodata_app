@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Bio Data App</h1>
+        <a href="{{ url_for('userdata') }}">
+            <button class="btn">➕ Add Your Bio Data</button>
+        </a>
+    </div>
+</body>
+</html>
